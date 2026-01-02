@@ -23,8 +23,8 @@ origins = [
     "http://localhost",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "https://Personalizadosmc.github.io",
-    "https://personalizadosmc.github.io/Aureumpos.Web" 
+    "https://github.com/Personalizadosmc",
+    "https://personalizadosmc.github.io/Aureumpos.Web/" 
 ]
 
 app.add_middleware(
