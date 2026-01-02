@@ -18,18 +18,10 @@ app = FastAPI(
 )
 
 # CORS
-# Definimos manualmente quién puede entrar
-origins = [
-    "http://localhost",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "https://github.com/Personalizadosmc",
-    "https://personalizadosmc.github.io/Aureumpos.Web/" 
-]
-
+# Versión Nuclear: Permite TODO
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins, # <--- Aquí usamos la lista que acabamos de crear
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
